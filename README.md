@@ -1,7 +1,7 @@
 CommPortal
 ==========
 
-## CommPortal PHP API
+### CommPortal PHP API
 
 ###### CommPortal - PHP library for MetaSwitch EAS CommPortal
 ###### version 1.0.1
@@ -11,4 +11,5 @@ CommPortal
 
 ###### All rights reserved.
 ###### Permission is hereby granted, free of charge, to use, copy or modify this software.  Use at your own risk.
+
 
