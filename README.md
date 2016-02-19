@@ -12,29 +12,42 @@ CommPortal
 ###### All rights reserved.
 ###### Permission is hereby granted, free of charge, to use, copy or modify this software.  Use at your own risk.
 ---
+###### Initialize object with a directory number and password
 ```php
-// Initialize object with a directory number and password
 $cp = new CommPortal($dn,$password);
-	
-// Initialize object with a directory number only (SSO)
+```	
+###### Initialize object with a directory number only (SSO)
+*Note: To use SSO you must install a certificate on the EAS server and create a private key file on your web server*
+```php
 $cp = new CommPortal($dn,$password);
-
-// Initialize object with a session
+```
+###### Initialize object with a session
+```php
 $cp = new CommPortal($session);
-	
-// Using magic GET method
-foreach ($cp->Voicemails as $vm) {
-	print_r($vm);
+```	
+###### Get voicemails using magic GET method
+```php
+foreach ($cp->Voicemails as $voicemail) {
+	print_r($voicemail);
 }
-	
-// Using traditional method
+```
+###### Get voicemails using traditional method
+```php
 $voicemails = $cp->getVoicemails();
-foreach ($voicemails as $vm) {
-	print_r($vm);
+foreach ($voicemails as $voicemail) {
+	print_r($voicemail);
 }
-			
+```
+###### Get call forwarding settings for 'Busy'			
+```php
 $busyForwarding = $cp->getCallForwarding('Busy');
 ```
-	
-*Note: To use SSO you must install a certificate on the EAS server and create a private key file on your web server*
+###### Enable call forwarding for 'Busy'
+```php
+$result = setCallForwarding(true,'Busy',$number);
+```
+###### Disable call forwarding for 'Busy'
+```php
+$result = setCallForwarding(false,'Busy');
+```
 		
