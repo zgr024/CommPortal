@@ -29,7 +29,7 @@ foreach ($cp->Voicemails as $vm) {
 	
 // Using traditional method
 $voicemails = $cp->getVoicemails();
-foreach ($vicemails as $vm) {
+foreach ($voicemails as $vm) {
 	print_r($vm);
 }
 			
