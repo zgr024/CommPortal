@@ -11,14 +11,15 @@ CommPortal
 
 ###### All rights reserved.
 ###### Permission is hereby granted, free of charge, to use, copy or modify this software.  Use at your own risk.
-
+---
 Initialize object with a directory number and password, session, or directory number only (SSO)
+
 Usage:
-  $cp = new CommPortal(1234567890);
-  
-  // Using magic GET method
+
+	$cp = new CommPortal(1234567890);
+	// Using magic GET method
 	foreach ($cp->Voicemails as $vm) {
-	    print_r($vm);
+		print_r($vm);
 	}
 	
 	// Using traditional method
