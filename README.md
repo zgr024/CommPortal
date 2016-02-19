@@ -40,16 +40,55 @@ foreach ($voicemails as $voicemail) {
 	print_r($voicemail);
 }
 ```
+###### Get voicemail counts
+```php
+$oicemailCounts = $cp->getVoicemailsCounts();
+```
+###### Get deleted voicemails counts
+```php
+$deletedVoicemailCounts = $cp->getDeletedVoicemailsCounts();
+```
+###### Get deleted voicemails
+```php
+$deletedVoicemails = $cp->getDeletedVoicemails();
+```
+###### Get voicemail message audio for embedded player
+```PHP
+$url = getVoicemailURL($voicemailID);
+```
+###### Download voicemail message audio
+```PHP
+getVoicemailURL($voicemailID,true,'filename.wav');
+```
 ###### Get call forwarding settings for 'Busy'			
 ```php
 $busyForwarding = $cp->getCallForwarding('Busy');
 ```
 ###### Enable call forwarding for 'Busy'
 ```php
-$result = setCallForwarding(true,'Busy',$number);
+$busyForwarding = setCallForwarding(true,'Busy',$number);
 ```
 ###### Disable call forwarding for 'Busy'
 ```php
-$result = setCallForwarding(false,'Busy');
+$busyForwarding = setCallForwarding(false,'Busy');
 ```
-		
+###### Get the Class of Service for the current subscriber		
+```php
+$classOdService = $cp->getClassOfService();
+```
+###### Get the Class of Service for the current subscriber		
+```php
+$classOdService = $cp->getClassOfService();
+```
+###### Get the Customer Information for the current subscriber		
+```php
+$classOdService = $cp->getCustomer();
+```
+###### Get whether the customer is subscibed to 3 Way Calling	
+```php
+$classOdService = $cp->get3Way();
+```
+###### Get the Customer Information for the current subscriber		
+```php
+$classOdService = $cp->getCustomer();
+```
