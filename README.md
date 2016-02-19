@@ -5,7 +5,7 @@ CommPortal
 
 #### CommPortal - PHP library for MetaSwitch EAS CommPortal
 #### version 1.0.1
-#### [https://github.com/zgr024/CommPortal]
+#### https://github.com/zgr024/CommPortal
 #### Copyright (C) 2014 Zachary Rosenberg
 #### Please submit problem or error reports to https://github.com/zgr024/CommPortal/issues
 
