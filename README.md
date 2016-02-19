@@ -12,21 +12,29 @@ CommPortal
 ###### All rights reserved.
 ###### Permission is hereby granted, free of charge, to use, copy or modify this software.  Use at your own risk.
 ---
-	// Initialize object with a directory number and password, session, or directory number only (SSO)
-
-	$cp = new CommPortal(1234567890);
-	// Using magic GET method
-	foreach ($cp->Voicemails as $vm) {
-		print_r($vm);
-	}
+```php
+// Initialize object with a directory number and password
+$cp = new CommPortal($dn,$password);
 	
-	// Using traditional method
-	$voicemails = $cp->getVoicemails();
-	foreach ($vicemails as $vm) {
-	    print_r($vm);
-	}
+// Initialize object with a directory number only (SSO)
+$cp = new CommPortal($dn,$password);
+
+// Initialize object with a session
+$cp = new CommPortal($session);
+	
+// Using magic GET method
+foreach ($cp->Voicemails as $vm) {
+	print_r($vm);
+}
+	
+// Using traditional method
+$voicemails = $cp->getVoicemails();
+foreach ($vicemails as $vm) {
+	print_r($vm);
+}
 			
-	$busyForwarding = $cp->getCallForwarding('Busy');
+$busyForwarding = $cp->getCallForwarding('Busy');
+```
 	
 *Note: To use SSO you must install a certificate on the EAS server and create a private key file on your web server*
 		
