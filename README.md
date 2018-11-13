@@ -74,21 +74,21 @@ $busyForwarding = setCallForwarding(false,'Busy');
 ```
 ###### Get the Class of Service for the current subscriber		
 ```php
-$classOdService = $cp->getClassOfService();
+$classOfService = $cp->getClassOfService();
 ```
 ###### Get the Class of Service for the current subscriber		
 ```php
-$classOdService = $cp->getClassOfService();
+$classOfService = $cp->getClassOfService();
 ```
 ###### Get the Customer Information for the current subscriber		
 ```php
-$classOdService = $cp->getCustomer();
+$classOfService = $cp->getCustomer();
 ```
 ###### Get whether the customer is subscibed to 3 Way Calling	
 ```php
-$classOdService = $cp->get3Way();
+$classOfService = $cp->get3Way();
 ```
 ###### Get the Customer Information for the current subscriber		
 ```php
-$classOdService = $cp->getCustomer();
+$classOfService = $cp->getCustomer();
 ```
